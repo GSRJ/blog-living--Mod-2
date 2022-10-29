@@ -1,0 +1,203 @@
+/* Desenvolva seu estilo aqui */
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem 0 0 0;
+  font-family: var(--main-font);
+  color: var(--color-grey-100);
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header > img {
+  object-fit: cover;
+}
+
+.brandInformation {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  gap: 2.5rem;
+}
+
+.brandInformation > img {
+  width: 128px;
+  height: 42px;
+}
+
+.brandInformation > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.brandInformation > h1 > span {
+  color: var(--color-brand-100);
+}
+
+.brandInformation > p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.brandInformation > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-grey-100);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.navCategories {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.navItem {
+  background-color: var(--color-grey-600);
+  border: 1px solid var(--color-grey-600);
+  border-radius: 2rem;
+}
+
+.navItem > button {
+  cursor: pointer;
+  padding: 0.5rem 1.37rem;
+  background-color: transparent;
+  border: none;
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+}
+
+.navItem:hover,
+.navItem:hover > button {
+  background-color: var(--color-brand-100);
+  color: var(--color-grey-700);
+}
+
+.navItem:active,
+.navItem:active > button {
+  background-color: var(--color-brand-100);
+  color: var(--color-grey-700);
+}
+
+.navItem:focus,
+.navItem:focus > button {
+  background-color: var(--color-brand-100);
+  color: var(--color-grey-700);
+}
+
+#postsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+.news {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.news > img {
+  height: 50%;
+  object-fit: cover;
+}
+.newsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.newsContent > h2 {
+  font-size: 1.5rem;
+  min-height: 4rem;
+  font-weight: 600;
+}
+
+.newsContent > p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.newsContent > span {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-brand-100);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  background-color: var(--color-grey-100);
+  color: var(--color-grey-400);
+  padding: 5rem 4rem;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.footerContent > img {
+  width: 128px;
+  height: 42px;
+}
+
+.footerContent > p {
+  width: 60%;
+  color: var(--color-grey-400);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+footer > button {
+  width: 19.5rem;
+  cursor: pointer;
+  background-color: var(--color-grey-200);
+  color: var(--color-grey-700);
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.37rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+footer > button > a {
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--color-grey-700);
+}
+
+.active > button {
+  background-color: var(--color-brand-100);
+  color: var(--color-grey-700);
+}
